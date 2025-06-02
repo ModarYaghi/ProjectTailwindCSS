@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="../src/output.css" rel="stylesheet"> -->
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-gray-500 p-2 w-72 m-2">
+      <div class="border border-gray-900 rounded-md">
+        <div class="flex">
+          <div class="bg-green-600 h-12 w-24 rounded-full m-2"></div>
+          <div class="text-white text-xs p-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button
+        class="m-2 w-36 py-3 rounded bg-green-300 hover:bg-blue-400 active:bg-red-500"
+      >
+        Simple block
+      </button>
+    </div>
+
+    <div class="m-2">
+      <div class="first:font-bold last:italic">Two</div>
+      <div class="first:font-bold last:italic">Three</div>
+      <div class="first:font-bold last:italic">Four</div>
+      <div class="first:font-bold last:italic">One</div>
+    </div>
+    <hr />
+    <div class="m-2 w-36 text-white text-center">
+      <div class="my-1 odd:bg-green-500 even:bg-blue-500">One</div>
+      <div class="my-1 odd:bg-green-500 even:bg-blue-500">Two</div>
+      <div class="my-1 odd:bg-green-500 even:bg-blue-500">Three</div>
+      <div class="my-1 odd:bg-green-500 even:bg-blue-500">Four</div>
+    </div>
+
+    <input type="number" required class="m-2 required:bg-red-200 my-1" />
+    <hr />
+    <input type="number" disabled class="m-2 disabled:bg-green-200 my-1" />
+
+    <hr />
+
+    <div class="group w-24 p-5 bg-gray-100">
+      <div class="group-hover:bg-green-500">Text1</div>
+      <div class="group-hover:bg-red-500">Text2</div>
+    </div>
+
+    <hr />
+
+    <input type="email" class="m-2 border border-red-600 peer" />
+    <p
+      class="m-2 invisible text-sm peer-invalid:visible peer-invalid:text-red-600"
+    >
+      invalid
+    </p>
+    <hr />
+    <span class="m-2 after:content-['am'] after:text-green-500"> I </span>
+    <br />
+    <span class="m-2 before:content-['I'] before:text-red-500"> am </span>
+    <hr />
+    <input
+      class="m-2 border border-red-600 placeholder:italic placeholder:text-red-500 p-2"
+      placeholder="Enter name"
+    />
+    <hr />
+    <ul class="p-2 list-disc marker:text-blue-500">
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+      <li>four</li>
+    </ul>
+    <hr />
+    <br />
+    <div class="selection:bg-green-600 selection:text-white w-36">
+      <p>
+        I am learning TailwindCSS, it's fun way to learn, basics are easy, Let's
+        build website
+      </p>
+      <br />
+      <p class="first-line:bg-green-500">
+        I am learning TailwindCSS, it's fun way to learn, basics are easy
+      </p>
+      <br />
+      <p class="first-letter:text-3xl">I am learning TailwindCSS</p>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div class="portrait:hidden">I am Desktop</div>
+    <br />
+    <div class="landscape:hidden">I am mobile</div>
+    <br />
+    <p class="text-green-500 print:text-red-500">I am learning TailwindCSS</p>
+  </body>
+</html>
