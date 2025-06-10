@@ -2,108 +2,160 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
     <title>Flowbite</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="antialiased">
-    <div class="">
-      <!-- Div 1 -->
 
-      <header class="sticky">
-        <!-- Header -->
-
-        <div
-          class="z-40 flex justify-center bg-gray-50 w-full px-4 py-3 lg:py-4 border border-b border-gray-200 dark:border-gray-600 dark:bg-gray-700"
-        >
-          <!-- Div 1.1 Banner -->
-          <div class="items-center md:flex">
-            <!-- Div 1.1.1 -->
-            <p
-              class="text-sm font-medium text-gray-900 md:my-0 dark:text-white"
-            >
-              <span
-                class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 hidden md:inline"
-                >New</span
-              >
-              We have launched the new Flowbite Dashboard featuring over 60+
-              pages!
-              <a
-                href="#"
-                class="inline-flex items-center ml-2 text-sm text-blue-600 md:ml-2 dark:text-blue-500 hover:underline"
-              >
-                Check it out
-                <svg
-                  class="w-3 h-3 ml-1.5 text-blue-600 dark:text-blue-500"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                  ></path>
-                </svg>
-              </a>
-            </p>
-          </div>
-        </div>
-        <!-- ------------------------------------------------------------------------ -->
-        <div
-          class="flex justify-between items-center p-4 bg-white border-b border-gray-200"
-        >
-          <div class="flex items-center">
-            <svg width="32" height="32">
-              <rect width="32" height="32" fill="blue" />
+  <body>
+    <div
+      id="banner"
+      tabindex="-1"
+      class="flex w-full justify-center border border-b border-gray-200 bg-gray-50 px-4 py-3 dark:border-gray-600 dark:bg-gray-700 lg:py-4">
+      <div class="items-center md:flex">
+        <p class="text-sm font-medium text-gray-900 dark:text-white md:my-0">
+          <span
+            class="mr-2 hidden rounded bg-blue-100 px-2.5 py-0.5 text-xs font-semibold text-blue-800 dark:bg-blue-200 dark:text-blue-800 md:inline"></span>
+            New
+          </span>
+          We have launched the new Flowbite Dashboard featuring over 60+ pages!
+          <a
+            class="ml-2 inline-flex items-center text-sm font-medium text-blue-600 hover:underline dark:text-blue-500 md:ml-2"
+            href="/application-ui/preview">
+            Check it out
+            <svg
+              class="ml-1.5 h-3 w-3 text-blue-600 dark:text-blue-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10">
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"></path>
             </svg>
-            <span class="ml-3 text-2xl font-semibold">Flowbite</span>
-          </div>
-          <ul class="flex space-x-6">
-            <li>
-              <a href="/docs/" class="text-gray-900 hover:text-blue-600"
-                >Docs</a
-              >
-            </li>
-            <li>
-              <a href="/blocks/" class="text-gray-900 hover:text-blue-600"
-                >Blocks</a
-              >
-            </li>
-            <li>
-              <a href="/figma/" class="text-gray-900 hover:text-blue-600"
-                >Figma</a
-              >
-            </li>
-            <li>
-              <a href="/icons/" class="text-gray-900 hover:text-blue-600"
-                >Icons</a
-              >
-            </li>
-            <li>
-              <a href="/blog/" class="text-gray-900 hover:text-blue-600"
-                >Blog</a
-              >
-            </li>
-          </ul>
-          <div class="flex items-center space-x-2">
-            <button class="p-2 text-gray-500 rounded-lg hover:bg-gray-100">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="flex items-center">
+      <a
+        href="/"
+        class="flex items-center justify-between">
+        <span
+          class="relative m-0 box-border inline-block h-auto w-auto max-w-full overflow-hidden border-0 bg-none p-0 opacity-100">
+          <span
+            class="m-0 box-border block h-auto w-auto max-w-full border-0 bg-none p-0 opacity-100">
+            <img
+              class="m-0 block h-auto w-auto max-w-full border-0 bg-none p-0 opacity-100"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2732%27%20height=%2733%27/%3e"
+              alt=""
+              aria-hidden="true" />
+          </span>
+          <img
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            alt="Flowbite Logo"
+            decoding="async"
+            data-nimg="intrinsic"
+            class="absolute inset-0 m-auto box-border block h-8 max-h-full min-h-full w-0 min-w-full max-w-full shrink-0 border-0 p-0" />
+        </span>
+        <span
+          class="ml-3 self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
+          Flowbite
+        </span>
+      </a>
+      <div class="hidden md:flex">
+        <button
+          type="button"
+          class="DocSearch DocSearch-Button"
+          aria-label="Search (Ctrl+K)">
+          <span class="DocSearch-Button-Container">
+            <svg
+              width="20"
+              height="20"
+              class="DocSearch-Search-Icon"
+              viewBox="0 0 20 20"
+              aria-hidden="true">
+              <path
+                d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                stroke="currentColor"
+                fill="none"
+                fill-rule="evenodd"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
+            <span class="DocSearch-Button-Placeholder">Search</span>
+          </span>
+          <span class="DocSearch-Button-Keys">
+            <kbd class="DocSearch-Button-Keys">
+              <svg
+                width="15"
+                height="15"
+                class="DocSearch-Control-Key-Icon">
                 <path
-                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                />
+                  d="M4.505 4.496h2M5.505 5.496v5M8.216 4.496l.055 5.993M10 7.5c.333.333.5.667.5 1v2M12.326 4.5v5.996M8.384 4.496c1.674 0 2.116 0 2.116 1.5s-.442 1.5-2.116 1.5M3.205 9.303c-.09.448-.277 1.21-1.241 1.203C1 10.5.5 9.513.5 8V7c0-1.57.5-2.5 1.464-2.494.964.006 1.134.598 1.24 1.342M12.553 10.5h1.953"
+                  stroke-width="1.2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="square"></path>
               </svg>
-            </button>
-            <a href="/login" class="bg-blue-700 text-white px-5 py-2 rounded-lg"
-              >Sign in</a
-            >
-          </div>
-        </div>
-        <!-- ----------------------------------------------------------------------- -->
-      </header>
+            </kbd>
+            <kbd class="DocSearch-Button-Key">K</kbd>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <button>
+          <span class="DocSearch-Button-Container">
+            <svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20" aria-hidden="true">
+              <path
+                d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                stroke="currentColor"
+                fill="none"
+                fill-rule="evenodd"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+            </path>
+            </svg>
+            <span class="DocSearch-Button-Placeholder">
+                Search
+            </span>
+          </span>
+          <span>
+            <kbd>
+              <svg>
+                <path></path>
+              </svg>
+            </kbd>
+            <kbd>K</kbd>
+          </span>
+        </button>
+      </div>
+      <button>
+        <svg>
+          <path></path>
+        </svg>
+      </button>
+      <a href="">
+        <span>Login</span>
+        <span>Sign in</span>
+        <svg>
+          <path></path>
+        </svg>
+      </a>
+      <button>
+        <svg>
+          <path></path>
+        </svg>
+      </button>
     </div>
   </body>
 </html>
