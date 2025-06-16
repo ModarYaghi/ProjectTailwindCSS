@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>SEEN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!--
+    Using a wrapper div can sometimes make it easier to apply global styles
+    like a full-page background image, without directly styling the body.
+    -->
+    <div
+      class="page-container min-h-screen bg-[url(./background.png)] bg-cover bg-center bg-no-repeat">
+      <div class="px-[100px]">
+        <!-- The background image -->
+        <!-- <div
+        class="background-image min-h-screen bg-cover bg-center bg-no-repeat">
+        <img
+          src="background.png"
+          alt="" />
+      </div> -->
+
+        <!-- Header for the logo -->
+        <header class="page-header relative pt-[100px]">
+          <!-- Ancor tag for linking back to the homepage -->
+          <a
+            href="/"
+            aria-label="Homepage">
+            <img
+              src="logo.png"
+              alt="Logo"
+              class="absolute h-[56px] w-[156px] object-cover" />
+          </a>
+        </header>
+
+        <!-- Main tag for the primary content of the page -->
+        <main class="main-content absolute top-1/2 flex w-full justify-between">
+          <!-- The first section for the content on the left -->
+          <section class="info-section">
+            <h1 class="text-white">Saudi Engine for Essential Needs</h1>
+            <p class="text-gray-400">
+              The smartest way to expand your business visibility
+            </p>
+          </section>
+
+          <!-- The second section for the sign-in -->
+          <section class="signin-section">
+            <!-- A div for styling container— the rounded rectangle -->
+            <div class="signin-box">
+              <h2 class="text-white">Fill your information</h2>
+              <p class="text-white">Please fill the fields correctly</p>
+
+              <!-- Form element for user input -->
+              <form
+                action="/login"
+                method="post">
+                <!-- A wrapping for form field group -->
+                <div class="form-group">
+                  <label
+                    for="email"
+                    class="text-white">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required />
+                </div>
+
+                <div class="form-group">
+                  <label
+                    for="password"
+                    class="text-white">
+                    password
+                  </label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="........"
+                    required />
+                </div>
+
+                <!-- A link for password forget -->
+                <a
+                  href="/forgot-password"
+                  class="forgot-password-link text-[#F79B72]">
+                  Forgot password?
+                </a>
+
+                <!-- A button for submit -->
+                <button
+                  type="submit"
+                  class="signin-button text-white">
+                  Sign In
+                </button>
+              </form>
+            </div>
+          </section>
+        </main>
+
+        <!-- Footer element -->
+        <footer class="page-footer absolute top-3/4 text-white">
+          <p>&copy; All rights reserved to SEEN platform</p>
+
+          <!-- Nav tag for navigation links -->
+          <nav class="footer-nav">
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Use</a>
+            <a href="/sitemap">Site Map</a>
+          </nav>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
