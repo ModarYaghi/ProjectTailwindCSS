@@ -10,21 +10,22 @@
   </head>
   <body>
     <main
-      class="relative min-h-screen w-full bg-cover bg-no-repeat"
+      class="flex min-h-screen w-full flex-col gap-y-[48px] bg-cover bg-no-repeat"
       style="background-image: url('background.png')">
       <!-- Logo -->
-      <div class="absolute left-[100px] top-[100px]">
+      <div
+        class="px-[24px] pt-[50px] md:px-[75px] md:pt-[75px] lg:px-[100px] lg:pt-[100px]">
         <img
           src="logo.png"
           alt="SEEN logo"
-          class="h-10 w-auto" />
+          class="h-auto w-auto" />
       </div>
 
       <!-- Content Wrapper -->
       <div
-        class="flex min-h-screen flex-col items-center justify-between px-4 md:flex-row md:px-24">
+        class="flex flex-col justify-between px-[24px] md:px-[75px] lg:flex-row lg:items-center lg:gap-x-[16px] lg:px-[100px]">
         <!-- Left Content -->
-        <div class="mb-12 max-w-md text-white md:mb-0 md:mr-12">
+        <div class="mb-12 text-white">
           <h1 class="mb-4 text-3xl font-bold md:text-5xl md:leading-[60px]">
             Saudi Engine for
             <br />
@@ -37,7 +38,7 @@
 
         <!-- Right Secton -->
         <section
-          class="w-full max-w-md rounded-3xl border-[1px] bg-white/10 p-6 text-white shadow-xl backdrop-blur-md md:max-w-xl md:p-8">
+          class="w-full rounded-3xl border bg-white/10 p-6 text-white shadow-xl backdrop-blur md:max-w-xl md:p-8">
           <header class="mb-6">
             <h2 class="mb-4 text-xl font-semibold">Fill your information</h2>
             <p class="text-sm text-gray-200">
@@ -99,7 +100,7 @@
 
       <!-- Footer -->
       <footer
-        class="absolute bottom-4 flex w-full flex-col items-center justify-between px-4 text-xs text-gray-300 md:flex-row md:px-24">
+        class="mb-4 flex w-full flex-col items-center justify-between px-[24px] text-xs text-gray-300 md:flex-row md:px-[75px] lg:px-[100px]">
         <p class="mb-2 md:mb-0">© All right reserved to SEEN platform</p>
         <div class="flex gap-4">
           <a
