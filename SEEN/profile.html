@@ -5,82 +5,125 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
+    <title>Responsive Design</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
   </head>
-  <body>
-    <!-- The Dashbord--navigation hub main box -->
+  <body class="flex min-h-screen items-center justify-center">
     <div
-      class="navigation-hub w-full max-w-md rounded-3xl border-t border-transparent bg-[#F2F2F2]/[0.10] bg-clip-padding p-4 text-gray-800 shadow-[8.6px_25.8px_51.6px_25.8px_#004de308] backdrop-blur-[200px] [border-image:linear-gradient(246.15deg,#E9EAEB_5.82%,rgba(255,255,255,0)_97.38%)_1]">
-      <div>
-        <div class="grid-division grid grid-cols-3 gap-6">
-          <!-- Elements -->
+      class="rounded-[2.5rem] bg-gradient-to-br from-[#FDF2EE] to-gray-200 p-[2px] shadow-[0_0_35px_rgba(29,78,216,0.2)]">
+      <div
+        class="h-full w-full rounded-[2.5rem] bg-gradient-to-br from-[#FDF2EE] to-[#FEFEFD] p-6">
+        <div class="grid grid-cols-2 gap-x-28 gap-y-10 sm:grid-cols-3">
           <a
-            href="categories"
-            class="group flex flex-col items-center justify-center rounded transition-colors duration-300 hover:bg-gray-100">
-            <!-- colored container for the svg -->
-            <div class="rounded-2xl bg-[#00FFDE1A]">
-              <img
-                src="public/assets/images/categ.svg"
-                alt=""
-                class="" />
+            href="#"
+            class="group text-center">
+            <div
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-[#E3F2EA] transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28">
+              <svg
+                class="h-12 w-12 text-[#00FFDE]"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5 14C5 18.9706 9.02944 23 14 23C18.9706 23 23 18.9706 23 14C23 9.02944 18.9706 5 14 5C9.02944 5 5 9.02944 5 14ZM5 34C5 38.9706 9.02944 43 14 43C18.9706 43 23 38.9706 23 34C23 29.0294 18.9706 25 14 25C9.02944 25 5 29.0294 5 34ZM25 34C25 38.9706 29.0294 43 34 43C38.9706 43 43 38.9706 43 34C43 29.0294 38.9706 25 34 25C29.0294 25 25 29.0294 25 34ZM19 14C19 16.7614 16.7614 19 14 19C11.2386 19 9 16.7614 9 14C9 11.2386 11.2386 9 14 9C16.7614 9 19 11.2386 19 14ZM19 34C19 36.7614 16.7614 39 14 39C11.2386 39 9 36.7614 9 34C9 31.2386 11.2386 29 14 29C16.7614 29 19 31.2386 19 34ZM39 34C39 36.7614 36.7614 39 34 39C31.2386 39 29 36.7614 29 34C29 31.2386 31.2386 29 34 29C36.7614 29 39 31.2386 39 34ZM35.0504 22.31L35.6052 21.0372C36.594 18.768 38.3752 16.9612 40.5976 15.9728L42.3068 15.2126C43.231 14.8016 43.231 13.4568 42.3068 13.0458L40.6934 12.3281C38.4136 11.3143 36.6004 9.44063 35.6286 7.09424L35.059 5.71891C34.6618 4.76037 33.338 4.76037 32.941 5.71891L32.3712 7.09424C31.3994 9.44063 29.5864 11.3143 27.3068 12.3281L25.6932 13.0458C24.769 13.4568 24.769 14.8016 25.6932 15.2126L27.4022 15.9728C29.6248 16.9612 31.4058 18.768 32.3948 21.0372L32.9496 22.31C33.3556 23.2418 34.6444 23.2418 35.0504 22.31Z"
+                  fill="currentColor" />
+              </svg>
             </div>
-            <span class="mt-3 text-xs">Categories</span>
+            <p class="mt-3 text-lg font-normal text-slate-700">Categories</p>
           </a>
           <a
-            href="applications"
-            class="">
-            <!-- colored container for the svg -->
-            <div>
-              <img
-                src="public/assets/images/app.svg"
-                alt="" />
+            href="#"
+            class="group text-center">
+            <div
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-[#E5F7FC] transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28">
+              <svg
+                class="h-12 w-12 text-[#00CAFF]"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14 23C9.02944 23 5 18.9706 5 14C5 9.02944 9.02944 5 14 5C18.9706 5 23 9.02944 23 14C23 18.9706 18.9706 23 14 23ZM14 43C9.02944 43 5 38.9706 5 34C5 29.0294 9.02944 25 14 25C18.9706 25 23 29.0294 23 34C23 38.9706 18.9706 43 14 43ZM34 23C29.0294 23 25 18.9706 25 14C25 9.02944 29.0294 5 34 5C38.9706 5 43 9.02944 43 14C43 18.9706 38.9706 23 34 23ZM34 43C29.0294 43 25 38.9706 25 34C25 29.0294 29.0294 25 34 25C38.9706 25 43 29.0294 43 34C43 38.9706 38.9706 43 34 43ZM14 19C16.7614 19 19 16.7614 19 14C19 11.2386 16.7614 9 14 9C11.2386 9 9 11.2386 9 14C9 16.7614 11.2386 19 14 19ZM14 39C16.7614 39 19 36.7614 19 34C19 31.2386 16.7614 29 14 29C11.2386 29 9 31.2386 9 34C9 36.7614 11.2386 39 14 39ZM34 19C36.7614 19 39 16.7614 39 14C39 11.2386 36.7614 9 34 9C31.2386 9 29 11.2386 29 14C29 16.7614 31.2386 19 34 19ZM34 39C36.7614 39 39 36.7614 39 34C39 31.2386 36.7614 29 34 29C31.2386 29 29 31.2386 29 34C29 36.7614 31.2386 39 34 39Z"
+                  fill="currentColor" />
+              </svg>
             </div>
-            <span>Applications</span>
+            <p class="mt-3 text-lg font-normal text-slate-700">Applications</p>
           </a>
           <a
-            href="featured-posts"
-            class="">
-            <!-- colored container for the svg -->
-            <div>
-              <img
-                src="public/assets/images/feat-posts.svg"
-                alt="" />
+            href="#"
+            class="group text-center">
+            <div
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-[#FEEBE9] transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28">
+              <svg
+                class="h-12 w-12 text-[#F93827]"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.2288 35.5912C20.554 37.1364 18.4155 37.1364 17.7408 35.5912L15.9855 31.5708C14.4234 27.9932 11.6118 25.1452 8.1046 23.5884L3.27316 21.4438C1.73707 20.762 1.73707 18.5274 3.27316 17.8455L7.9537 15.7679C11.5511 14.171 14.4131 11.2176 15.9485 7.51784L17.7266 3.23346C18.3864 1.64354 20.5832 1.64353 21.243 3.23346L23.021 7.51788C24.5564 11.2176 27.4184 14.171 31.0158 15.7679L35.6964 17.8455C37.2324 18.5274 37.2324 20.762 35.6964 21.4438L30.865 23.5884C27.3578 25.1452 24.5462 27.9932 22.984 31.5708L21.2288 35.5912ZM9.07912 19.6447C13.6508 21.674 17.368 25.0096 19.4848 29.5992C21.6016 25.0096 25.3188 21.674 29.8904 19.6447C25.2642 17.5911 21.5352 14.0929 19.4848 9.42176C17.4344 14.093 13.7053 17.5911 9.07912 19.6447ZM38.8028 45.3798L39.2964 44.2484C40.1764 42.2312 41.7614 40.625 43.739 39.7464L45.2598 39.0706C46.0824 38.7052 46.0824 37.5098 45.2598 37.1444L43.8242 36.5064C41.7956 35.6052 40.1822 33.9396 39.3172 31.8538L38.8104 30.6312C38.457 29.7792 37.279 29.7792 36.9256 30.6312L36.4188 31.8538C35.554 33.9396 33.9406 35.6052 31.912 36.5064L30.4762 37.1444C29.6538 37.5098 29.6538 38.7052 30.4762 39.0706L31.997 39.7464C33.9748 40.625 35.5596 42.2312 36.4396 44.2484L36.9334 45.3798C37.2946 46.208 38.4414 46.208 38.8028 45.3798ZM36.749 38.0938L37.874 36.9766L38.9756 38.0938L37.874 39.1796L36.749 38.0938Z"
+                  fill="currentColor" />
+              </svg>
             </div>
-            <span>Featured Posts</span>
+            <p class="mt-3 text-lg font-normal text-slate-700">
+              Featured Posts
+            </p>
           </a>
           <a
-            href="gov-essentials"
-            class="">
-            <!-- colored container for the svg -->
-            <div>
-              <img
-                src="public/assets/images/gov-essential.svg"
-                alt="" />
+            href="#"
+            class="group text-center">
+            <div
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-[#FFD65A]/10 transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28">
+              <svg
+                class="h-12 w-12 text-[#FFD65A]"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M40 12H46V16H44V38H46V42H2V38H4V16H2V12H8V8C8 6.89544 8.89544 6 10 6H38C39.1046 6 40 6.89544 40 8V12ZM40 16H8V38H14V24H18V38H22V24H26V38H30V24H34V38H40V16ZM12 10V12H36V10H12Z"
+                  fill="currentColor" />
+              </svg>
             </div>
-            <span>Gov Essentials</span>
+            <p class="mt-3 text-lg font-normal text-slate-700">Gov essential</p>
           </a>
           <a
-            href="coming-soon"
-            class="">
-            <!-- colored container for the svg -->
-            <div>
-              <img
-                src="public/assets/images/coming-soon.svg"
-                alt="" />
+            href="#"
+            class="group text-center">
+            <div
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-[#FEE4EB] transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28">
+              <svg
+                class="h-12 w-12 text-[#FF0B55]"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18 34C18 34 32 36 38 42H40C41.1046 42 42 41.1046 42 40V27.874C43.7252 27.43 45 25.8638 45 24C45 22.1362 43.7252 20.57 42 20.126V8C42 6.89544 41.1046 6 40 6H38C32 12 18 14 18 14H10C7.79086 14 6 15.7909 6 18V30C6 32.2092 7.79086 34 10 34H12L14 44H18V34ZM22 17.3224C23.3666 17.0292 25.055 16.6239 26.8786 16.0875C30.235 15.1003 34.5 13.5452 38 11.1492V36.8508C34.5 34.4548 30.235 32.8998 26.8786 31.9126C25.055 31.3762 23.3666 30.9708 22 30.6776V17.3224ZM10 18H18V30H10V18Z"
+                  fill="currentColor" />
+              </svg>
             </div>
-            <span>Coming Soon</span>
+            <p class="mt-3 text-lg font-normal text-slate-700">Coming Soon</p>
           </a>
           <a
-            href="new-launched"
-            class="">
-            <!-- colored container for the svg -->
-            <div>
-              <img
-                src="public/assets/images/new-launched.svg"
-                alt="" />
+            href="#"
+            class="group text-center">
+            <div
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-[#F1E5FD] transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28">
+              <svg
+                class="h-12 w-12 text-[#7C00FE]"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24.0012 36.52L9.8943 44.4164L13.045 28.5598L1.17578 17.5836L17.2299 15.6801L24.0012 1L30.7724 15.6801L46.8264 17.5836L34.9574 28.5598L38.108 44.4164L24.0012 36.52ZM24.0012 31.936L32.4946 36.6902L30.5976 27.1434L37.7438 20.5348L28.078 19.3887L24.0012 10.55L19.9243 19.3887L10.2584 20.5348L17.4046 27.1434L15.5077 36.6902L24.0012 31.936Z"
+                  fill="currentColor" />
+              </svg>
             </div>
-            <span>New Launched</span>
+            <p class="mt-3 text-lg font-normal text-slate-700">New Launched</p>
           </a>
         </div>
       </div>
