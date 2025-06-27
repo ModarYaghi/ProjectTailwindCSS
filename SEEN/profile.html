@@ -27,21 +27,23 @@
         <!-- Admin profile parts -->
         <div class="order-2 flex gap-6 self-center md:order-none">
           <!-- Profile picture -->
-          <div class="h-32 w-32 overflow-hidden rounded-full md:h-20 md:w-20">
+          <div class="h-20 w-20 overflow-hidden rounded-full md:h-24 md:w-24">
             <img
               src="public/assets/images/adm-prof.svg"
               alt="Profile image"
               class="h-full w-full object-cover" />
           </div>
           <!-- Badge, name, and email -->
-          <div class="hidden md:block">
+          <div class="flex flex-col items-start justify-center">
             <!-- badge -->
             <span
-              class="rounded-full bg-gradient-to-b from-[#F79B72] to-[#BB5B31] px-3 py-1 text-center text-[10px] text-white">
+              class="hidden rounded-full bg-gradient-to-b from-[#F79B72] to-[#BB5B31] px-3 py-1 text-center text-[10px] text-white md:inline">
               Admin
             </span>
             <h2 class="text-3xl font-bold">Louay!</h2>
-            <p class="text-xs text-[#9EA2AD]">bazerbashi.louay@gamil.com</p>
+            <p class="hidden text-xs text-[#9EA2AD] md:block">
+              bazerbashi.louay@gamil.com
+            </p>
           </div>
         </div>
         <!-- logo -->
@@ -56,14 +58,15 @@
         <div class="order-3 self-center md:order-none">
           <button
             type="button"
-            class="h-12 w-36 rounded-full border border-[#FF5C02] px-10 text-sm font-semibold text-[#FF5C02]">
+            class="h-12 rounded-full border border-[#FF5C02] px-10 text-sm font-semibold text-[#FF5C02] transition-colors duration-200 hover:bg-[#FF5C02] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#FF5C02] focus:ring-offset-2">
             Logout
           </button>
         </div>
       </header>
       <!-- Content Wrapper -->
-      <div class="flex flex-grow flex-col items-center justify-center">
-        <div class="flex flex-col items-center justify-center p-8">
+      <div class="flex flex-grow flex-col items-center justify-center px-4">
+        <div
+          class="flex flex-col items-center justify-center p-6 text-center sm:p-8">
           <h1 class="p-2 text-2xl font-bold sm:text-4xl">
             SEEN's Control Center
           </h1>
@@ -79,13 +82,14 @@
             class="h-full w-full rounded-[2.5rem] bg-gradient-to-br from-[#FDF2EE] to-[#FEFEFD] p-6">
             <!-- ---------------------Container of all Navigation Elements---------------------------- -->
             <div
-              class="grid grid-cols-3 gap-x-20 gap-y-6 md:gap-x-28 md:gap-y-10">
+              class="grid grid-cols-3 gap-x-5 gap-y-6 sm:gap-x-20 sm:gap-y-10">
               <a
                 href="#"
-                class="group text-center">
+                class="group flex flex-col items-center text-center">
                 <div
-                  class="flex h-24 w-24 items-center justify-center rounded-3xl bg-[#E3F2EA] transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28">
+                  class="flex h-20 w-20 items-center justify-center rounded-2xl bg-[#E3F2EA] transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28 sm:rounded-3xl">
                   <svg
+                    aria-hidden="true"
                     class="h-12 w-12 text-[#00FFDE]"
                     viewBox="0 0 48 48"
                     fill="none"
@@ -95,16 +99,18 @@
                       fill="currentColor" />
                   </svg>
                 </div>
-                <p class="mt-3 text-base font-normal text-slate-700 md:text-lg">
+                <p
+                  class="mt-2 text-sm font-normal text-slate-700 sm:mt-3 sm:text-lg">
                   Categories
                 </p>
               </a>
               <a
                 href="#"
-                class="group text-center">
+                class="group flex flex-col items-center text-center">
                 <div
-                  class="flex h-24 w-24 items-center justify-center rounded-3xl bg-[#E5F7FC] transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28">
+                  class="flex h-20 w-20 items-center justify-center rounded-2xl bg-[#E5F7FC] transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28 sm:rounded-3xl">
                   <svg
+                    aria-hidden="true"
                     class="h-12 w-12 text-[#00CAFF]"
                     viewBox="0 0 48 48"
                     fill="none"
@@ -114,16 +120,18 @@
                       fill="currentColor" />
                   </svg>
                 </div>
-                <p class="mt-3 text-lg font-normal text-slate-700">
+                <p
+                  class="mt-2 text-sm font-normal text-slate-700 sm:mt-3 sm:text-lg">
                   Applications
                 </p>
               </a>
               <a
                 href="#"
-                class="group text-center">
+                class="group flex flex-col items-center text-center">
                 <div
-                  class="flex h-24 w-24 items-center justify-center rounded-3xl bg-[#FEEBE9] transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28">
+                  class="flex h-20 w-20 items-center justify-center rounded-2xl bg-[#FEEBE9] transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28 sm:rounded-3xl">
                   <svg
+                    aria-hidden="true"
                     class="h-12 w-12 text-[#F93827]"
                     viewBox="0 0 48 48"
                     fill="none"
@@ -133,16 +141,18 @@
                       fill="currentColor" />
                   </svg>
                 </div>
-                <p class="mt-3 text-lg font-normal text-slate-700">
+                <p
+                  class="mt-2 text-sm font-normal text-slate-700 sm:mt-3 sm:text-lg">
                   Featured Posts
                 </p>
               </a>
               <a
                 href="#"
-                class="group text-center">
+                class="group flex flex-col items-center text-center">
                 <div
-                  class="flex h-24 w-24 items-center justify-center rounded-3xl bg-[#FFD65A]/10 transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28">
+                  class="flex h-20 w-20 items-center justify-center rounded-2xl bg-[#FFD65A]/10 transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28 sm:rounded-3xl">
                   <svg
+                    aria-hidden="true"
                     class="h-12 w-12 text-[#FFD65A]"
                     viewBox="0 0 48 48"
                     fill="none"
@@ -152,16 +162,18 @@
                       fill="currentColor" />
                   </svg>
                 </div>
-                <p class="mt-3 text-lg font-normal text-slate-700">
+                <p
+                  class="mt-2 text-sm font-normal text-slate-700 sm:mt-3 sm:text-lg">
                   Gov essential
                 </p>
               </a>
               <a
                 href="#"
-                class="group text-center">
+                class="group flex flex-col items-center text-center">
                 <div
-                  class="flex h-24 w-24 items-center justify-center rounded-3xl bg-[#FEE4EB] transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28">
+                  class="flex h-20 w-20 items-center justify-center rounded-2xl bg-[#FEE4EB] transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28 sm:rounded-3xl">
                   <svg
+                    aria-hidden="true"
                     class="h-12 w-12 text-[#FF0B55]"
                     viewBox="0 0 48 48"
                     fill="none"
@@ -171,16 +183,18 @@
                       fill="currentColor" />
                   </svg>
                 </div>
-                <p class="mt-3 text-lg font-normal text-slate-700">
+                <p
+                  class="mt-2 text-sm font-normal text-slate-700 sm:mt-3 sm:text-lg">
                   Coming Soon
                 </p>
               </a>
               <a
                 href="#"
-                class="group text-center">
+                class="group flex flex-col items-center text-center">
                 <div
-                  class="flex h-24 w-24 items-center justify-center rounded-3xl bg-[#F1E5FD] transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28">
+                  class="flex h-20 w-20 items-center justify-center rounded-2xl bg-[#F1E5FD] transition-transform duration-300 group-hover:scale-105 sm:h-28 sm:w-28 sm:rounded-3xl">
                   <svg
+                    aria-hidden="true"
                     class="h-12 w-12 text-[#7C00FE]"
                     viewBox="0 0 48 48"
                     fill="none"
@@ -190,7 +204,8 @@
                       fill="currentColor" />
                   </svg>
                 </div>
-                <p class="mt-3 text-lg font-normal text-slate-700">
+                <p
+                  class="mt-2 text-sm font-normal text-slate-700 sm:mt-3 sm:text-lg">
                   New Launched
                 </p>
               </a>
@@ -200,7 +215,7 @@
       </div>
       <!-- Footer -->
       <footer
-        class="mb-8 flex w-full flex-col items-center justify-between px-6 text-xs text-[#102E50] md:flex-row md:px-14">
+        class="mb-8 flex w-full flex-col items-center justify-between gap-4 px-6 text-xs text-[#102E50] md:flex-row md:gap-0 md:px-14">
         <p>© All right reserved to SEEN platform</p>
         <div class="flex gap-4">
           <a
