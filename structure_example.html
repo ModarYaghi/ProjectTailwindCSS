@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Our Services</title>
+    <!-- Link to your CSS file would go here -->
+  </head>
+  <body>
+    <!-- ====================================================================== -->
+    <!-- 1. HEADER: The top banner of your page.                            -->
+    <!-- The <header> tag is a landmark for the introductory content.       -->
+    <!-- ====================================================================== -->
+    <header>
+      <!-- A navigation menu is semantically a "list of links," so we use <ul> and <li> -->
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ====================================================================== -->
+    <!-- 2. MAIN: The primary, unique content of this specific page.        -->
+    <!-- The <main> tag is a crucial landmark for accessibility.            -->
+    <!-- ====================================================================== -->
+    <main>
+      <!-- Using a <section> helps group related content. The aria-labelledby -->
+      <!-- links the heading to this section for screen readers.              -->
+      <section aria-labelledby="services-heading">
+        <!-- This is the main heading for this section of the page. -->
+        <h1 id="services-heading">Our Services</h1>
+
+        <!-- ==================================================================== -->
+        <!-- 3. THE LIST: The core of your page content.                      -->
+        <!-- Since this is a "list of services," the <ul> tag is the perfect  -->
+        <!-- choice. It tells the browser and screen readers that the items   -->
+        <!-- inside are all part of a single group.                           -->
+        <!-- ==================================================================== -->
+        <ul>
+          <!-- ================================================================== -->
+          <!-- 4. LIST ITEM (li): A single Service/Category                 -->
+          <!-- Each <li> represents one complete item in your list. It contains -->
+          <!-- the clickable link and the separate action buttons.          -->
+          <!-- ================================================================== -->
+          <li>
+            <!-- ================================================================= -->
+            <!-- 5. THE CLICKABLE LINK (a)                                     -->
+            <!-- The user clicks this to navigate. It contains the image and     -->
+            <!-- title. This is separate from the action buttons to be valid HTML. -->
+            <!-- ================================================================= -->
+            <a href="/services/graphic-design">
+              <!-- The alt attribute is critical for accessibility. It describes -->
+              <!-- the content of the link if the image fails to load.         -->
+              <img
+                src="path/to/design-icon.svg"
+                alt="Graphic Design services" />
+
+              <!-- A heading tag gives the title structure. -->
+              <h2>Graphic Design</h2>
+            </a>
+
+            <!-- ================================================================= -->
+            <!-- 6. THE ACTION BUTTONS (div with button)                       -->
+            <!-- This is a separate group for actions that affect this item.   -->
+            <!-- They are <button> elements because they perform an action,    -->
+            <!-- not navigation.                                                 -->
+            <!-- ================================================================= -->
+            <div>
+              <!-- aria-label is required for icon-only buttons so screen      -->
+              <!-- readers can announce what the button does.                    -->
+              <button
+                type="button"
+                aria-label="Edit Graphic Design">
+                <!-- Edit SVG Icon would go here -->
+              </button>
+              <button
+                type="button"
+                aria-label="Delete Graphic Design">
+                <!-- Delete SVG Icon would go here -->
+              </button>
+            </div>
+          </li>
+
+          <!-- ... another list item for the next service ... -->
+          <li>
+            <a href="/services/web-development">
+              <img
+                src="path/to/web-dev-icon.svg"
+                alt="Web Development services" />
+              <h2>Web Development</h2>
+            </a>
+            <div>
+              <button
+                type="button"
+                aria-label="Edit Web Development">
+                <!-- Edit SVG Icon -->
+              </button>
+              <button
+                type="button"
+                aria-label="Delete Web Development">
+                <!-- Delete SVG Icon -->
+              </button>
+            </div>
+          </li>
+
+          <!-- ... and so on for all your services ... -->
+        </ul>
+      </section>
+    </main>
+
+    <!-- ====================================================================== -->
+    <!-- 7. FOOTER: The bottom banner of your page.                           -->
+    <!-- The <footer> tag is a landmark for closing content like copyrights -->
+    <!-- or contact info.                                                       -->
+    <!-- ====================================================================== -->
+    <footer>
+      <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Categories List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <header class="m-4 flex items-center justify-between md:m-8">
+      <div class="flex items-center gap-2 md:gap-3">
+        <!-- Backward arrow -->
+        <a
+          href="profile.html"
+          aria-label="Back to Profile">
+          <svg
+            aria-hidden="true"
+            class="h-6 w-6"
+            viewBox="0 0 24 25"
+            fill=""
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m7.8284 11.4999 5.364-5.36401-1.4142-1.41421L4 
+            12.4999l7.7782 7.7781 1.4142-1.4142-5.364-5.3639H20v-2H7.8284Z"
+              fill="#102E50" />
+          </svg>
+        </a>
+        <h1
+          id="categories-list-heading"
+          class="text-3xl font-bold text-[#102E50] md:text-4xl">
+          Categories List
+        </h1>
+      </div>
+      <button
+        class="rounded-full bg-gradient-to-r from-[#F79B72] to-[#BB5B31] px-6 py-3 text-sm font-semibold text-white md:px-10 md:py-4">
+        + Add New
+      </button>
+    </header>
+    <!-- =========== Categories List ================== -->
+    <main class="flex-grow">
+      <section
+        aria-labelledby="categories-list-heading"
+        class="mx-4 rounded-3xl border-2 border-gray-200 p-4 md:mx-8 md:p-6">
+        <ul class="flex flex-col gap-y-2">
+          <!-- ===== Heath Care Category ===== -->
+          <li
+            class="flex items-center justify-between border-b-2 border-[#E9EAEB] pb-5">
+            <a
+              href="profile.html"
+              class="flex items-center gap-2">
+              <img
+                src="public/assets/images/health_care.png"
+                alt="Health Care Category"
+                class="h-14 w-14 rounded-2xl md:h-16 md:w-16" />
+              <p class="text-lg font-bold md:text-2xl">Health Care</p>
+            </a>
+            <!-- ==== Actions ==== -->
+            <div class="flex items-center gap-4 md:gap-6">
+              <button
+                type="button"
+                class="rounded-xl bg-[#102E50]/10 p-3 hover:bg-[#102E50]/20 focus:outline-none focus:ring-2 focus:ring-[#102E50]/50"
+                aria-label="Edit item">
+                <svg
+                  aria-hidden="true"
+                  class="h-[20px] w-[18px]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.41421 15.89 16.5563 5.74786l-1.4142-1.41422L5
+                      14.4758V15.89h1.41421Zm.82843 2H3v-4.2427L14.435
+                    2.21232c.3906-.39052 1.0237-.39052 1.4142 0l2.8285
+                    2.82843c.3905.39052.3905 1.02369 0 1.41421L7.24264 17.89ZM3
+                    19.89h18v2H3v-2Z"
+                    fill="#102E50" />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="rounded-xl bg-[#F93827]/10 p-3 hover:bg-[#F93827]/20 focus:outline-none focus:ring-2 focus:ring-[#F93827]/50"
+                aria-label="Delete item">
+                <svg
+                  aria-hidden="true"
+                  class="h-[20px] w-[18px]"
+                  viewBox="0 0 24 24"
+                  fill="none">
+                  <path
+                    d="M4 8h16v13c0 .5523-.4477 1-1 1H5c-.55228 0-1-.4477-1-1V8Zm2 
+                      2v10h12V10H6Zm3 2h2v6H9v-6Zm4 0h2v6h-2v-6ZM7 
+                      5V3c0-.55228.44772-1 1-1h8c.5523 0 1 .44772 1 
+                      1v2h5v2H2V5h5Zm2-1v1h6V4H9Z"
+                    fill="#F93827" />
+                </svg>
+              </button>
+            </div>
+          </li>
+          <!-- ===== Finance & Bancking Category ===== -->
+          <li
+            class="flex items-center justify-between border-b-2 border-[#E9EAEB] pb-5">
+            <a
+              href="profile.html"
+              class="flex items-center gap-2">
+              <img
+                src="public/assets/images/finance.png"
+                alt="Finance & Banking Category"
+                class="h-14 w-14 rounded-2xl md:h-16 md:w-16" />
+              <p class="text-lg font-bold md:text-2xl">Finance & Banking</p>
+            </a>
+            <!-- ==== Actions ==== -->
+            <div class="flex items-center gap-4 md:gap-6">
+              <button
+                type="button"
+                class="rounded-xl bg-[#102E50]/10 p-3 hover:bg-[#102E50]/20 focus:outline-none focus:ring-2 focus:ring-[#102E50]/50"
+                aria-label="Edit item">
+                <svg
+                  aria-hidden="true"
+                  class="h-[20px] w-[18px]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.41421 15.89 16.5563 5.74786l-1.4142-1.41422L5
+                      14.4758V15.89h1.41421Zm.82843 2H3v-4.2427L14.435
+                    2.21232c.3906-.39052 1.0237-.39052 1.4142 0l2.8285
+                    2.82843c.3905.39052.3905 1.02369 0 1.41421L7.24264 17.89ZM3
+                    19.89h18v2H3v-2Z"
+                    fill="#102E50" />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="rounded-xl bg-[#F93827]/10 p-3 hover:bg-[#F93827]/20 focus:outline-none focus:ring-2 focus:ring-[#F93827]/50"
+                aria-label="Delete item">
+                <svg
+                  aria-hidden="true"
+                  class="h-[20px] w-[18px]"
+                  viewBox="0 0 24 24"
+                  fill="none">
+                  <path
+                    d="M4 8h16v13c0 .5523-.4477 1-1 1H5c-.55228 0-1-.4477-1-1V8Zm2 
+                      2v10h12V10H6Zm3 2h2v6H9v-6Zm4 0h2v6h-2v-6ZM7 
+                      5V3c0-.55228.44772-1 1-1h8c.5523 0 1 .44772 1 
+                      1v2h5v2H2V5h5Zm2-1v1h6V4H9Z"
+                    fill="#F93827" />
+                </svg>
+              </button>
+            </div>
+          </li>
+          <!-- ===== Care Services Category ===== -->
+          <li
+            class="flex items-center justify-between border-b-2 border-[#E9EAEB] pb-5">
+            <a
+              href="profile.html"
+              class="flex items-center gap-2">
+              <img
+                src="public/assets/images/car_services.png"
+                alt="Car Services Category"
+                class="h-14 w-14 rounded-2xl md:h-16 md:w-16" />
+              <p class="text-xl font-bold md:text-2xl">Car Services</p>
+            </a>
+            <!-- ==== Actions ==== -->
+            <div class="flex items-center gap-4 md:gap-6">
+              <button
+                type="button"
+                class="rounded-xl bg-[#102E50]/10 p-3 hover:bg-[#102E50]/20 focus:outline-none focus:ring-2 focus:ring-[#102E50]/50"
+                aria-label="Edit item">
+                <svg
+                  aria-hidden="true"
+                  class="h-[20px] w-[18px]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.41421 15.89 16.5563 5.74786l-1.4142-1.41422L5
+                      14.4758V15.89h1.41421Zm.82843 2H3v-4.2427L14.435
+                    2.21232c.3906-.39052 1.0237-.39052 1.4142 0l2.8285
+                    2.82843c.3905.39052.3905 1.02369 0 1.41421L7.24264 17.89ZM3
+                    19.89h18v2H3v-2Z"
+                    fill="#102E50" />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="rounded-xl bg-[#F93827]/10 p-3 hover:bg-[#F93827]/20 focus:outline-none focus:ring-2 focus:ring-[#F93827]/50"
+                aria-label="Delete item">
+                <svg
+                  aria-hidden="true"
+                  class="h-[20px] w-[18px]"
+                  viewBox="0 0 24 24"
+                  fill="none">
+                  <path
+                    d="M4 8h16v13c0 .5523-.4477 1-1 1H5c-.55228 0-1-.4477-1-1V8Zm2 
+                      2v10h12V10H6Zm3 2h2v6H9v-6Zm4 0h2v6h-2v-6ZM7 
+                      5V3c0-.55228.44772-1 1-1h8c.5523 0 1 .44772 1 
+                      1v2h5v2H2V5h5Zm2-1v1h6V4H9Z"
+                    fill="#F93827" />
+                </svg>
+              </button>
+            </div>
+          </li>
+          <!-- ===== Telecommunication Category ===== -->
+          <li
+            class="flex items-center justify-between border-b-2 border-[#E9EAEB] pb-5">
+            <a
+              href="profile.html"
+              class="flex items-center gap-2">
+              <img
+                src="public/assets/images/telecom.png"
+                alt="Telecommunication Category"
+                class="h-14 w-14 rounded-2xl md:h-16 md:w-16" />
+              <p class="text-xl font-bold md:text-2xl">Telecommunication</p>
+            </a>
+            <!-- ==== Actions ==== -->
+            <div class="flex items-center gap-4 md:gap-6">
+              <button
+                type="button"
+                class="rounded-xl bg-[#102E50]/10 p-3 hover:bg-[#102E50]/20 focus:outline-none focus:ring-2 focus:ring-[#102E50]/50"
+                aria-label="Edit item">
+                <svg
+                  aria-hidden="true"
+                  class="h-[20px] w-[18px]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.41421 15.89 16.5563 5.74786l-1.4142-1.41422L5
+                      14.4758V15.89h1.41421Zm.82843 2H3v-4.2427L14.435
+                    2.21232c.3906-.39052 1.0237-.39052 1.4142 0l2.8285
+                    2.82843c.3905.39052.3905 1.02369 0 1.41421L7.24264 17.89ZM3
+                    19.89h18v2H3v-2Z"
+                    fill="#102E50" />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="rounded-xl bg-[#F93827]/10 p-3 hover:bg-[#F93827]/20 focus:outline-none focus:ring-2 focus:ring-[#F93827]/50"
+                aria-label="Delete item">
+                <svg
+                  aria-hidden="true"
+                  class="h-[20px] w-[18px]"
+                  viewBox="0 0 24 24"
+                  fill="none">
+                  <path
+                    d="M4 8h16v13c0 .5523-.4477 1-1 1H5c-.55228 0-1-.4477-1-1V8Zm2 
+                      2v10h12V10H6Zm3 2h2v6H9v-6Zm4 0h2v6h-2v-6ZM7 
+                      5V3c0-.55228.44772-1 1-1h8c.5523 0 1 .44772 1 
+                      1v2h5v2H2V5h5Zm2-1v1h6V4H9Z"
+                    fill="#F93827" />
+                </svg>
+              </button>
+            </div>
+          </li>
+          <!-- ===== Insurance Services Category ===== -->
+          <li
+            class="flex items-center justify-between border-b-2 border-[#E9EAEB] pb-5">
+            <a
+              href="profile.html"
+              class="flex items-center gap-2">
+              <img
+                src="public/assets/images/insurance_services.png"
+                alt="Insurance Services Category"
+                class="h-14 w-14 rounded-2xl md:h-16 md:w-16" />
+              <p class="text-xl font-bold md:text-2xl">Insurance Services</p>
+            </a>
+            <!-- ==== Actions ==== -->
+            <div class="flex items-center gap-4 md:gap-6">
+              <button
+                type="button"
+                class="rounded-xl bg-[#102E50]/10 p-3 hover:bg-[#102E50]/20 focus:outline-none focus:ring-2 focus:ring-[#102E50]/50"
+                aria-label="Edit item">
+                <svg
+                  aria-hidden="true"
+                  class="h-[20px] w-[18px]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.41421 15.89 16.5563 5.74786l-1.4142-1.41422L5
+                      14.4758V15.89h1.41421Zm.82843 2H3v-4.2427L14.435
+                    2.21232c.3906-.39052 1.0237-.39052 1.4142 0l2.8285
+                    2.82843c.3905.39052.3905 1.02369 0 1.41421L7.24264 17.89ZM3
+                    19.89h18v2H3v-2Z"
+                    fill="#102E50" />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="rounded-xl bg-[#F93827]/10 p-3 hover:bg-[#F93827]/20 focus:outline-none focus:ring-2 focus:ring-[#F93827]/50"
+                aria-label="Delete item">
+                <svg
+                  aria-hidden="true"
+                  class="h-[20px] w-[18px]"
+                  viewBox="0 0 24 24"
+                  fill="none">
+                  <path
+                    d="M4 8h16v13c0 .5523-.4477 1-1 1H5c-.55228 0-1-.4477-1-1V8Zm2 
+                      2v10h12V10H6Zm3 2h2v6H9v-6Zm4 0h2v6h-2v-6ZM7 
+                      5V3c0-.55228.44772-1 1-1h8c.5523 0 1 .44772 1 
+                      1v2h5v2H2V5h5Zm2-1v1h6V4H9Z"
+                    fill="#F93827" />
+                </svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer
+      class="flex w-full flex-col items-center justify-between gap-4 px-6 py-8 text-xs text-[#102E50] md:flex-row md:gap-0 md:px-14">
+      <p>© All rights reserved to SEEN platform</p>
+      <div class="flex gap-4">
+        <a
+          href="#"
+          class="hover:underline">
+          Privacy Policy
+        </a>
+        <a
+          href="#"
+          class="hover:underline">
+          Terms of Use
+        </a>
+        <a
+          href="#"
+          class="hover:underline">
+          Site Map
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
